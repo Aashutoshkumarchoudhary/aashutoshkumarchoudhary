@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#e9eefc"/><stop offset="1" stop-color="#e8f7f3"/></linearGradient></defs>
+<rect width="700" height="420" rx="28" fill="url(#g)"/>
+<rect x="125" y="75" width="450" height="265" rx="20" fill="#111827"/>
+<circle cx="155" cy="105" r="7" fill="#fff"/><circle cx="180" cy="105" r="7" fill="#fff"/><circle cx="205" cy="105" r="7" fill="#fff"/>
+<text x="160" y="165" font-family="monospace" font-size="25" fill="#c7d2fe">$ security.scan()</text>
+<text x="160" y="205" font-family="monospace" font-size="22" fill="#fff">&gt; network protected</text>
+<text x="160" y="242" font-family="monospace" font-size="22" fill="#fff">&gt; access verified</text>
+<path d="M500 145v55c0 42-30 70-55 82-25-12-55-40-55-82v-55l55-22z" fill="#eef0ff" stroke="#8b90e8" stroke-width="6"/>
+<path d="M420 198l18 18 35-40" fill="none" stroke="#5b5bd6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="350" y="382" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="#374151">CYBERSECURITY / HACKING</text>
+</svg>

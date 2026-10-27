@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aashutosh Kumar Choudhary — Resume</title>
+  <meta name="description" content="Official Resume of Aashutosh Kumar Choudhary - Computer Science Engineer, AI & ML Specialist.">
+
+  <!-- Google Fonts: Times New Roman / Garamond feel with clean sans-serif accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       RESUME STYLING (MATCHING THE UPLOADED TWO-PAGE RESUME DOCUMENT)
+       ========================================================================== */
+    :root {
+      --bg-page: #f8fafc;
+      --paper: #ffffff;
+      --text: #111827;
+      --text-muted: #374151;
+      --border: #d1d5db;
+      --accent: #1e3a8a;
+      --rule: #111827;
+    }
+
+    [data-theme="dark"] {
+      --bg-page: #0a111e;
+      --paper: #0f172a;
+      --text: #f3f4f6;
+      --text-muted: #cbd5e1;
+      --border: #334155;
+      --accent: #38bdf8;
+      --rule: #475569;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-page);
+      color: var(--text);
+      font-family: 'Crimson Pro', Georgia, serif;
+      line-height: 1.35;
+      font-size: 15px;
+      padding: 20px 10px 50px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    /* Floating Action Bar (Screen Only) */
+    .action-bar {
+      max-width: 850px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 20px;
+      background: #020913;
+      border: 1px solid #1e3a5f;
+      border-radius: 12px;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .action-bar a,
+    .action-bar button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      border: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back {
+      background: #0e243d;
+      color: #7dd3fc;
+      border: 1px solid #1e4775;
+    }
+
+    .btn-back:hover {
+      background: #16365c;
+      color: #ffffff;
+    }
+
+    .btn-print {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+    }
+
+    .btn-print:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+    }
+
+    .btn-theme {
+      background: #111e30;
+      color: #e2e8f0;
+      border: 1px solid #233e61;
+    }
+
+    .btn-theme:hover {
+      background: #1c324e;
+    }
+
+    /* Paper Container (Standard A4 / Letter format) */
+    .paper-sheet {
+      max-width: 850px;
+      margin: 0 auto 25px;
+      background: var(--paper);
+      padding: 44px 50px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+
+    /* Header */
+    .resume-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .resume-name {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .contact-row a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-row a:hover {
+      text-decoration: underline;
+      color: var(--accent);
+    }
+
+    .social-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14.5px;
+      color: var(--text-muted);
+    }
+
+    .social-row a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .social-row a:hover {
+      text-decoration: underline;
+      color: var(--accent);
+    }
+
+    /* Section Headings */
+    .resume-section {
+      margin-top: 15px;
+    }
+
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: capitalize;
+      letter-spacing: 0.02em;
+      color: var(--text);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2px;
+      margin-bottom: 8px;
+    }
+
+    /* Content & Typography */
+    p.summary-text {
+      font-size: 14px;
+      line-height: 1.45;
+      color: var(--text);
+      text-align: justify;
+    }
+
+    .entry {
+      margin-bottom: 10px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 15px;
+    }
+
+    .entry-title {
+      font-weight: 700;
+    }
+
+    .entry-date {
+      font-style: italic;
+      font-size: 14px;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .entry-subtitle {
+      font-style: italic;
+      font-size: 14.5px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    ul.bullet-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 3px;
+    }
+
+    ul.bullet-list li {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-bottom: 2.5px;
+      color: var(--text);
+    }
+
+    .skills-block p {
+      font-size: 14px;
+      line-height: 1.45;
+      margin-bottom: 4px;
+    }
+
+    .skills-block strong {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .cert-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .cert-list li {
+      font-size: 14px;
+      line-height: 1.45;
+      margin-bottom: 4px;
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0 !important;
+        font-size: 11pt !important;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .paper-sheet {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: #000000 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating Screen Action Bar -->
+  <div class="action-bar">
+    <div>
+      <a href="index.html" class="btn-back">← Back to Portfolio</a>
+    </div>
+    <div style="display: flex; gap: 10px;">
+      <button id="theme-btn" class="btn-theme">🌓 Toggle Dark/Paper</button>
+      <button onclick="window.print()" class="btn-print">🖨️ Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <!-- RESUME SHEET (PAGE 1) -->
+  <div class="paper-sheet">
+    <!-- Header -->
+    <header class="resume-header">
+      <h1 class="resume-name">Aashutosh Kumar Choudhary</h1>
+      <div class="contact-row">
+        <span>📍 Samastipur, Bihar, 848114</span>
+        <span>📞 <a href="tel:+919608221722">+91 9608221722</a></span>
+        <span>✉️ <a href="mailto:aashutosha262@gmail.com">aashutosha262@gmail.com</a></span>
+      </div>
+      <div class="social-row">
+        <span>💼 <a href="https://linkedin.com/in/aashutosh-kumar-choudhary" target="_blank" rel="noopener">linkedin.com/in/aashutosh-kumar-choudhary</a></span>
+        <span>💻 <a href="https://github.com/Aashutoshkumarchoudhary" target="_blank" rel="noopener">github.com/Aashutoshkumarchoudhary</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="resume-section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Ambitious Computer Science graduate with a strong focus on Artificial Intelligence and Machine Learning, with solid programming and analytical skills. Experienced in developing AI-driven applications, conversational AI systems, computer vision solutions, and research-oriented projects. Worked on patented innovations in healthcare and ultrasonic navigation. Strong problem-solving ability, adaptability, and interest in emerging technologies, with a focus on building practical and scalable software solutions.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="resume-section">
+      <h2 class="section-title">Experience</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Python &amp; Web Development Intern</span>
+          <span class="entry-date">Oct 2026 – Present</span>
+        </div>
+        <div class="entry-subtitle">Infotact Solutions</div>
+        <ul class="bullet-list">
+          <li>Working on Python and Web Development projects, applying programming and software development concepts to practical applications.</li>
+          <li>Developing and improving web-based solutions using Python, HTML, CSS, and JavaScript.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="resume-section">
+      <h2 class="section-title">Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Chandigarh University – B.E. Computer Science and Engineering (AIML)</span>
+          <span class="entry-date">2022 – 2026</span>
+        </div>
+        <div class="entry-subtitle">CGPA: 7.38</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">K.S.R.I. College – Intermediate</span>
+          <span class="entry-date">2020 – 2022</span>
+        </div>
+        <div class="entry-subtitle">Percentage: 75.4%</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Mahavir Narendra Urmila H/S – Matriculation</span>
+          <span class="entry-date">2019 – 2020</span>
+        </div>
+        <div class="entry-subtitle">Percentage: 62.2%</div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="resume-section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-block">
+        <p><strong>Programming Languages:</strong> Python, C++, C, JavaScript</p>
+        <p><strong>Machine Learning &amp; AI:</strong> Machine Learning, Deep Learning, CNN, LLMs, OpenAI GPT API</p>
+        <p><strong>Data Analysis &amp; Visualization:</strong> Excel, Power BI, EDA, Data Cleaning, Data Visualization, SHAP</p>
+        <p><strong>Web &amp; Application Development:</strong> HTML, CSS, JavaScript, Streamlit</p>
+        <p><strong>Databases:</strong> MySQL, SQL, MongoDB</p>
+        <p><strong>Tools &amp; Technologies:</strong> Git, GitHub, Jupyter Notebook, VS Code, OpenCV, IoT, YouTube API</p>
+        <p><strong>Programming Concepts:</strong> Object-Oriented Programming (OOPs)</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="resume-section">
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">LLM-Based Conversational AI Chatbot</span>
+          <span class="entry-date">Aug 2025 – Jan 2026</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed a conversational AI chatbot using the OpenAI GPT API and Python.</li>
+          <li>Implemented structured prompting and real-time API interaction to generate contextual responses.</li>
+          <li>Designed the application with a focus on practical conversational AI capabilities.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Emotion-Driven Music Recommendation</span>
+          <span class="entry-date">Feb 2025 – Jun 2025</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed an emotion-based music recommendation system using Python, CNN, and OpenCV.</li>
+          <li>Integrated FER2013 for facial-expression recognition and YouTube API for music recommendations.</li>
+          <li>Built the application interface using Streamlit for interactive user experience.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">AI for Soil Health Forecasting</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Developed an AI-based soil health forecasting solution using IoT and machine learning techniques.</li>
+          <li>Applied CNN, Random Forest, XGBoost, and SHAP for prediction and model interpretation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Research & Patents -->
+    <section class="resume-section">
+      <h2 class="section-title">Research &amp; Patents</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Blood Glucose and Ketone Risk Detection System</span>
+          <span class="entry-date">2026</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Published patent title in India for an AI-based non-invasive risk detection system.</li>
+          <li>Developed a system using transdermal gas flux and multimodal skin physiological signals.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Ultrasonic Navigation Device</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Published patent title in India for an ultrasonic navigation solution.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">AI for Soil Health Forecasting</span>
+          <span class="entry-date">2025</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Published research title in India on AI-based soil health forecasting.</li>
+          <li>Applied Python, CNN, IoT, XGBoost, SHAP, and data visualization techniques.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section class="resume-section">
+      <h2 class="section-title">Achievements &amp; Certifications</h2>
+      <ul class="cert-list">
+        <li>Winner at <strong>OncoQuest 2025</strong>, organized by Hsuite.</li>
+        <li><strong>3rd Rank</strong> at IMTheFuture 9.0, IMT Ghaziabad.</li>
+        <li><strong>5th Rank</strong> in BugBuster 2.0, S.P.I.T. IETE.</li>
+        <li><strong>Certificate Program in AI &amp; ML — Gold Category</strong>, FutureSkills Prime / NASSCOM IT-ITeS SSC, 2026.</li>
+        <li><strong>Certificate Program in Cloud Computing Engineering (Azure / AWS) — Gold Category</strong>, FutureSkills Prime / NASSCOM IT-ITeS SSC, 2026.</li>
+        <li><strong>Applied Machine Learning in Python</strong>, University of Michigan — Coursera.</li>
+        <li><strong>Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</strong>.</li>
+      </ul>
+    </section>
+
+    <!-- Soft Skills -->
+    <section class="resume-section">
+      <h2 class="section-title">Soft Skills</h2>
+      <p style="font-size: 14.5px; color: var(--text); padding-top: 2px;">
+        Effective Communication, Leadership, Problem Solving, Adaptability
+      </p>
+    </section>
+  </div>
+
+  <script>
+    // Theme toggle
+    const themeBtn = document.getElementById("theme-btn");
+    themeBtn.addEventListener("click", () => {
+      const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      document.documentElement.setAttribute("data-theme", isDark ? "light" : "dark");
+    });
+  </script>
+</body>
+
+</html>

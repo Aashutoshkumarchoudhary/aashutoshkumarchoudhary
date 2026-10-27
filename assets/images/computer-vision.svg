@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#eef0ff"/><stop offset="1" stop-color="#dfe5ff"/></linearGradient></defs>
+<rect width="700" height="420" rx="28" fill="url(#g)"/>
+<rect x="155" y="85" width="390" height="250" rx="24" fill="#fff" stroke="#5b5bd6" stroke-width="8"/>
+<circle cx="350" cy="210" r="68" fill="#eef0ff" stroke="#5b5bd6" stroke-width="8"/>
+<circle cx="350" cy="210" r="28" fill="#5b5bd6"/>
+<path d="M120 125h-45v45M580 125h45v45M120 295h-45v-45M580 295h45v-45" fill="none" stroke="#5b5bd6" stroke-width="8" stroke-linecap="round"/>
+<path d="M175 120l30-30M525 120l-30-30M175 300l30 30M525 300l-30 30" stroke="#8b90e8" stroke-width="7" stroke-linecap="round"/>
+<text x="350" y="382" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="#4646b5">COMPUTER VISION</text>
+</svg>
